@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile {
+  /* border-image: linear-gradient(#faf006, #facc05, #ff0000, #6701e9) 30; */
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #f99c4a 0%, #f47838 100%), border-box;
+  border-radius: 50%;
+}
+
+.user-profile::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.user-profile::after {
+  content: "+";
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(0, 145, 255);
+  bottom: 1px;
+  right: 1px;
+  border-radius: 50%;
+}
