@@ -34,3 +34,10 @@
   right: 1px;
   border-radius: 50%;
 }
+
+@media (min-width: 1280px) {
+  body,
+  nav {
+    width: 24rem !important;
+  }
+}
